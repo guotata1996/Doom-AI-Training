@@ -38,7 +38,7 @@ class UpFloorEnv(Env):
     def reset(self):
         self.game.close()
         seed = np.random.randint(self.seed_min, self.seed_max)
-        self.game.load_config('O:\\Doom\\viz_2018\\maps\\finddoor\\finddoor_small.cfg')
+        self.game.load_config('O:\\Doom\\viz_2018\\maps\\finddoor\\finddoor.cfg')
         self.game.set_doom_scenario_path('O:\\Doom\\scenarios\\height\\{}.wad'.format(seed))
 
         self.game.init()
